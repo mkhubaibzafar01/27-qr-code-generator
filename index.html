@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">▦</div>
+      <p class="eyebrow">SMART TOOLS</p>
+      <h1>QR Code Generator</h1>
+      <p class="subtitle">Turn your links and text into scannable QR codes.</p>
+    </header>
+
+    <section class="generator">
+      <label for="qrInput">Enter text or website URL</label>
+
+      <textarea
+        id="qrInput"
+        placeholder="https://example.com"
+        maxlength="1500"
+      ></textarea>
+
+      <button id="generateBtn" type="button">Generate QR Code →</button>
+
+      <p id="message" role="status">Enter some text to get started.</p>
+
+      <div id="result" class="result" hidden>
+        <div class="qr-frame">
+          <img id="qrImage" alt="Generated QR code">
+        </div>
+
+        <h2>Your QR Code is ready!</h2>
+        <p>Scan it with your phone camera.</p>
+
+        <button id="downloadBtn" class="download-btn" type="button">
+          ↓ Download PNG
+        </button>
+      </div>
+    </section>
+
+    <footer>Simple tools. Smarter workflows. ✨</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
